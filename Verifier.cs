@@ -2,32 +2,44 @@
 public class Verifier
 {
     // Add your code here
-    public int OldEnough(int age){
-        if (age > 17) {
+    public string OldEnough(int age)
+    {
+        // age over 17 is considered "old enough"
+        if (age > 17)
+        {
             return "old enough";
         }
-        return "";
+        return string.Empty;
     }
 
-    public int UnderAge(int age){
-        if (age < 18) {
+    public string UnderAge(int age)
+    {
+        // age under 18 is "under age"
+        if (age < 18)
+        {
             return "under age";
         }
-        return "";
+        return string.Empty;
     }
 
-    public int LegalSpeed(int speed){
-        if (speed <= 50) {
+    public string LegalSpeed(int speed)
+    {
+        // legal speed is 50 or less
+        if (speed <= 50)
+        {
             return "legal speed";
         }
-        return "";
+        return string.Empty;
     }
 
-    public int IsGoldenYears(int age){
-        if (age >= 65) {
+    public string IsGoldenYears(int age)
+    {
+        // golden years starts at age 65
+        if (age >= 65)
+        {
             return "golden years";
         }
-        return "";
+        return string.Empty;
     }
 }
 
